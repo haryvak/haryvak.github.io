@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Game of Life</title>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="The Game of Life">
+        <!-- <meta name="keywords" content="keyword1, keyword2, keyword3"> -->
+        <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="index-section">
+            <div class="home-pix">
+                <img src="home-pix/1.png" style="width:100%">
+                <!-- <div class="home-pix-text">
+                <h3> Movement </h3>
+                <p><b> nature is tripping </b></p>   
+                </div> -->
+            </div>
+            <div class="home-pix">
+                <img src="home-pix/2.png" style="width:100%">
+                <!-- <div class="home-pix-text">
+                <h3> Movement </h3>
+                <p><b> nature is tripping </b></p>   
+                </div> -->
+            </div>
+            <div class="home-pix">
+                <img src="home-pix/3.png" style="width:100%">
+                <!-- <div class="home-pix-text">
+                <h3> Movement </h3>
+                <p><b> nature is tripping </b></p>   
+                </div> -->
+            </div>
+            <div class="home-pix">
+                <img src="home-pix/4.png" style="width:100%">
+                <!-- <div class="home-pix-text">
+                <h3> Movement </h3>
+                <p><b> nature is tripping </b></p>   
+                </div> -->
+            </div>
+            <p id="home-text">
+                So the crude term "the game of life" flowers
+                and reveals a wider understanding of both life and games.
+                Life as we tend to handle it, as a superposition of game-systems, could be thus seen as devoid of inherent meaning, as well as gaining some meaning where there was no meaning before. Depending on the games we choose to play or not play and those we are unaware of playing or not playing, our meaning for life is shaped and shifted by this complex multi-game-system which may include games (especially those we are unaware of playing but not only) with roles and rules that oppose each other. These conflicts if not [recognised] and properly handled could lead to extremely stressful states of mind 
+                because our meaning is shattered.
+            </p>
+        </section>
+        <footer>
+            <p>&copy araneae devs 2020</p>
+        </footer>
+
+
+        <script>
+           
+           //Automatic Slideshow - change image every 6 seconds
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("home-pix");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 6000);    
+            }
+        
+        </script>
+
+    </body>
+
+</html>

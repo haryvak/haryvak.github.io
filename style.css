@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Basic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Forum&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #c4c4c4;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    padding: 1em;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 0 0.5em;
+}
+
+nav a {
+    display: inline-block;
+    padding: .5em;
+    border-radius: 5%;
+    color: #c4c4c4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* color: black; */
+    /* background-color: #aa8800; */
+    font-size: 1.1em;
+    padding: 0.3em;
+}
+
+section {
+    flex: 1 0 auto;
+    background-color: #070707;
+}
+
+section p {
+    font-family: 'Basic';
+}
+
+footer {
+    position: sticky;
+    bottom: 0px;
+    padding: 0.4em;
+    font-family: 'Forum';
+    font-weight: lighter;
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.4em;
+    color: #444;
+    background-color: #0f1314;
+}
+
+.name{
+    font-family: 'Forum';
+    font-weight: lighter;
+    font-size: 1.6em;
+    letter-spacing: 0.4em;
+}
+
+#home-text{
+    font-family: 'Basic';
+    padding: 1.5em 1.9em 5em;
+    margin: 0;
+    text-align: justify;
+    line-height: 1.9em;
+}
+
+#about-section {
+    display: flex;
+    padding: 5em 0em;
+}
+
+#line {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+#explore-section {
+    display: flex;
+    padding-top: 15em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #444;
+}
+
+#modal {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#modal-content {
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: .3em;
+    width: 50%;
+    max-width: 500px;
+    color: #888;
+    background-color: #0f1314;
+}
+
+#close-btn {
+    margin: 1em;
+    padding: .5em 1em;
+    border: 1px solid #888;
+    border-radius: .2em;
+    color: #999;
+    font-weight: bold;
+    background-color: #111;
+}
+
+#close-btn:hover{
+    cursor: pointer;
+    color: #bbb;
+    background-color: #222;
+}
+
+#contact-section {
+    display: flex;
+    padding: 4em 0em;
+}
+
+#address{
+    letter-spacing: 0.2em;
+    font-weight: lighter;   
+}
+
+.left-div, .right-div{
+    flex: auto;
+    width: 25%;
+}
+
+.middle-div {
+    flex: auto;
+    max-width: 490px;
+}
+
+/*custom scroolbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #070707; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #444; 
+  }

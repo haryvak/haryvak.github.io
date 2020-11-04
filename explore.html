@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Game of Life - About</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id='explore-section'>
+            <div class="left-div"></div>
+            <div class="middle-div">
+                <p>
+                    Nothing to see here
+                </p>
+                <div class="modal-show" id='modal'>
+                    <div id="modal-content">
+                        <p>Go outside and play</p>
+                        <button id="close-btn">I Promise</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-div"></div>
+        </section>
+        <footer>
+            <p>&copy araneae devs 2020</p>
+        </footer>
+        
+        <script>
+           
+            var modal = document.getElementById("modal");
+            
+            var btn = document.getElementById("close-btn");
+            
+            btn.onclick = function() {  
+                modal.style.display = "none";
+            }   
+            
+         
+         </script>
+
+    </body>
+</html>
