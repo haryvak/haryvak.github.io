@@ -77,12 +77,24 @@ footer {
     background-color: #0f1314;
 }
 
+
 .name{
     font-family: 'Forum';
     font-weight: lighter;
     font-size: 1.6em;
     letter-spacing: 0.4em;
 }
+
+.left-div, .right-div{
+    flex: auto;
+    width: 25%;
+}
+
+.middle-div {
+    flex: auto;
+    max-width: 490px;
+}
+
 
 #home-text{
     font-family: 'Basic';
@@ -157,34 +169,19 @@ footer {
     font-weight: lighter;   
 }
 
-.left-div, .right-div{
-    flex: auto;
-    width: 25%;
-}
 
-.middle-div {
-    flex: auto;
-    max-width: 490px;
-}
-
-/*custom scroolbar */
-
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-/* Track */
+}
+
 ::-webkit-scrollbar-track {
     background: #070707; 
-  }
+}
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #333; 
-  }
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #444; 
-  }
+}
